@@ -5,6 +5,17 @@ Testado no WSL2.
 Esse pequeno projeto tem como objetivo abrir o arquivo de hosts do windows pelo wsl e escrever o ip do linux,
 sempre que o ambiente for iniciado, o projeto foi feito pois o serviço em go [wsl2host](https://github.com/shayne/go-wsl2-host) não funcionou comigo.
 
+### Requisitos
+
+- WSL (Windows subsystem for linux ativado):
+- - Instalando o WSL: [wsl-ms-docs](https://docs.microsoft.com/pt-br/windows/wsl/install-win10)
+- Distro linux instalada.
+- - A mais popular atualmente é o Ubuntu,
+porém estou utilizando o [Arch-Linux](https://github.com/yuk7/ArchWSL)
+- Python instalado na versão 3.6+
+- - Recomendo utilização do projeto [anaconda](https://www.anaconda.com/distribution/),
+ou [miniconda](https://docs.conda.io/en/latest/miniconda.html), porém é opcional pois a maioria das distros já possuem python.
+
 #### Estrutura
 A estrutura do projeto.
 
@@ -16,7 +27,7 @@ wslhost
 └── wslhost.sh
 ```
 
-### Como usar
+#### Como usar
 A forma mais simples de usar é executando o shell script wslhost.sh
 ```
 path/./wshost.sh
