@@ -3,7 +3,7 @@ import os
 import sys
 import socket
 
-def get_ip_address(): -> String
+def get_ip_address() -> str:
     ''' 
         Function responsable to return current ipAdress of eth0 ethernet interface
     '''
