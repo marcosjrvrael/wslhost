@@ -50,6 +50,6 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
-    logger.info(f"Args: {args}")
+    #logger.info(f"Args: {args}")
 
     run(args.hp)
