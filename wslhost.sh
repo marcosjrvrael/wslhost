@@ -9,6 +9,9 @@ function read_args () {
         --hp)
         hp="${2}"
         shift;;
+        --bn)
+        bn="${2}"
+        shift;;
         *)
       printf "***********************************************************\n"
       printf "* Error: Invalid argument: '%s', run --help               *\n""${1}"
@@ -22,7 +25,7 @@ function read_args () {
 }
 
 function call_python () {
-    python ${DIR}/source/wslhost.py --hp "${hp}"
+    python ${DIR}/source/wslhost.py --hp "${hp}" --bn "${bn}"
 }
 
 read_args "${@}"
