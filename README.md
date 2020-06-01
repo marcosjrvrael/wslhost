@@ -38,11 +38,11 @@ wslhost
 #### Como usar
 A forma mais simples de usar é executando o shell script wslhost.sh
 ```
-path/./wshost.sh --hp path/hostsfile
+path/./wshost.sh --hp path/hostsfile --bn bash_name
 ```
 ou
 ```
-bash path/wshost.sh --hp path/hostsfile
+bash path/wshost.sh --hp path/hostsfile --bn bash_name
 ```
 #### Modo automatico bashrc
 Para que o arquivo seja executado ao iniciar o shell wsl seja ele ubuntu ou qualquer distro,
@@ -57,7 +57,7 @@ obs.: as reticencias no exemplo são apenas ilustrativas.
 ```
 export WSLHOST=path/wslhost.sh
 ...
-alias wslhost="bash $WSLHOST --hp path/hosts"
+alias wslhost="bash $WSLHOST --hp path/hosts --bn bash_name"
 ...
 wslhost
 ```
@@ -65,12 +65,14 @@ wslhost
 agora sempre que você abrir um shell do wsl ele ira mapear o ip para o seu hostfile do windows,
 agora basta subir seus serviços e acessar no browser seguinte a estrutura abaixo.
 ```
-wsl.local:PORTA
+bash_name:PORTA
 ```
 Ex.:
 ```
-wsl.local:8888
+arch.local:8888
+ubuntu.local:8888
 ```
+OBS.: A porta de exemplo é do jupyter-lab 
 
 #### Contribuições
 Todas as contriuições sugestões e criticas(construtivas) serão bem vindas.
